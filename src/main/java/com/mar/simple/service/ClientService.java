@@ -24,6 +24,7 @@ public class ClientService {
     public Client addClient(Client client) {
         return clientRepository.save(client);
     }
+
     public Client updateClient(UUID id, Client client) {
         client.setId(id);
         return clientRepository.save(client);
